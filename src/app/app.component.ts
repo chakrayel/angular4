@@ -8,29 +8,29 @@ import {ItemDataService} from './item/item-data.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  private title: string = 'my test app';
-  private titleClass:boolean = true;
+   title: string = 'my Angular4 app';
+   titleClass:boolean = true;
  // ensure Object property names are in single quote
-  private titleClasses: Object = {
+   titleClasses: Object = {
       'title-h4': true,
       'title-large-h4': true
   }
-
-  private titleStyles: Object = {
+   titleStyle:string = null;
+   titleStyles: Object = {
     'background' : 'red'
   }
 
-  private _age: number = 0;
-  private isTrue: boolean = true;
-  private obj = {
+   _age: number = 0;
+   isTrue: boolean = true;
+   obj = {
     name: 'Chakra', age: 32
   }
 
-  private newItem: string = "Enter an item";
-  private items: Array<string> = ["Item1","Item2"];
-  private numbersArray: Array<number> = [1,2,10,6,4,8];
+   newItem: string = "Enter an item";
+   items: Array<string> = ["Item1","Item2"];
+   numbersArray: Array<number> = [1,2,10,6,4,8];
   // even though declared as private, they are still visible in the template!
-  private words: Array<string> = [];
+   words: Array<string> = [];
 
   constructor(private itemDataService: ItemDataService) {
      // assigning this.words to getter method, notice there is no use of parens this.itemDataService.words
@@ -41,7 +41,7 @@ export class AppComponent {
    public ngOnInit() : void {
      console.log("AppComponent ngOnInit");
    }
-  private  pushItem(newItem: string): void {
+  pushItem(newItem: string): void {
     if (this.newItem != "") this.items.push(newItem);
   }
 
