@@ -8,7 +8,7 @@ import {ItemDataService} from './item/item-data.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-   title: string = 'my Angular4 app';
+   title: string = 'Angular4 proof of concept';
    titleClass:boolean = true;
  // ensure Object property names are in single quote
    titleClasses: Object = {
